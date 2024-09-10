@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulář</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jednoduchý formulář</h1>
+        <form id="simpleForm">
+            <label for="firstName">Jméno:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Příjmení:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="school">Škola:</label>
+            <input type="text" id="school" name="school" required>
+
+            <label for="class">Třída:</label>
+            <input type="text" id="class" name="class" required>
+
+            <label for="age">Věk:</label>
+            <input type="number" id="age" name="age" required>
+
+            <button type="submit" class="submitBtn">Odeslat</button>
+        </form>
+
+        <button id="showDataBtn" class="actionBtn">Zobrazit uložená data</button>
+        <h2 class="hidden" id="savedDataTitle">Uložená data:</h2>
+        <ul id="dataList" class="hidden"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
